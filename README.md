@@ -53,6 +53,52 @@ pnpm dev
 
 5. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+### Docker Installation (Alternative)
+
+You can also run the application using Docker:
+
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd chat-assistant-web
+```
+
+2. Copy environment variables:
+```bash
+cp .env.example .env
+```
+
+3. Build and run with Docker Compose:
+```bash
+# Development
+docker-compose up --build
+
+# Production
+docker-compose -f docker-compose.prod.yml up -d --build
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view the application.
+
+**Docker Commands:**
+```bash
+# Build Docker image
+docker build -t chat-assistant-web .
+
+# Run container directly
+docker run -p 3000:3000 --env-file .env chat-assistant-web
+
+# Check health status
+curl http://localhost:3000/api/health
+
+# View logs
+docker-compose logs -f
+
+# Stop containers
+docker-compose down
+```
+
+For detailed Docker deployment instructions including AWS EC2 setup, see [DOCKER_DEPLOYMENT.md](./DOCKER_DEPLOYMENT.md).
+
 ## Project Structure
 
 ```
