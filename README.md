@@ -172,6 +172,11 @@ Check out the [Next.js deployment documentation](https://nextjs.org/docs/deploym
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+# Sample Demo 
+## Links:
+https://www.youtube.com/watch?v=O7z4CqbpZ2s&t=27s&ab_channel=LJPH
+
+
 ## License
 
 This project is licensed under the MIT License.
